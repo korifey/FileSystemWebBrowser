@@ -1,0 +1,28 @@
+<project name="Transport Network Service Project (ant root)" default="maven">
+
+    <condition property="maven.executable" value="mvn.bat">
+        <os family="windows"/>
+    </condition>
+
+    <property name="maven.executable" value="mvn"/>
+    <property file="build.properties"/>
+
+    <target name="maven">
+        <property name="target" value="clean install"/>
+        <exec dir="." executable="${maven.executable}" failonerror="true">
+            <arg line="-DapplicationVersion=${applicationVersion} ${target}"/>
+        </exec>
+    </target>
+    <target name="tree">
+        <property name="target" value="dependency:tree"/>
+        <exec dir="." executable="${maven.executable}" failonerror="true">
+            <arg line="-DapplicationVersion=${applicationVersion} ${target}"/>
+        </exec>
+    </target>
+    <target name="clean">
+        <property name="target" value="clean"/>
+        <exec dir="." executable="${maven.executable}" failonerror="true">
+            <arg line="-DapplicationVersion=${applicationVersion} ${target}"/>
+        </exec>
+    </target>
+</project>
