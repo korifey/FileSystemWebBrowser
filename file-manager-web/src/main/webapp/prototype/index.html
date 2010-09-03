@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<head>
+<!-- link rel="stylesheet" type="text/css" href="main.css"-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <style type="text/css">
+   
+   * {
+    margin: 0;
+    padding: 0;
+   }
+   
+   div {
+   	position: absolute;
+   	border: solid 1px black;
+   }
+   
+   #mainPanel { 
+	
+	background: #ddd;
+	
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	
+	left: 10%;
+	top: 10%;
+	right:10%;
+	bottom:10%;
+   }
+   
+   #navPanel {
+   	left: 6px;
+   	right:6px; 
+   	top: 30px;
+   	/*border: 0;*/
+   	
+   }
+   
+   #contentPanel { 
+	min-width: 90%; 
+	min-height: 50%;
+	background: #fc0;
+	float: none; 
+	position: absolute; 
+	top: 75px;
+	left: 6px;
+    right: 6px;
+    bottom: 6px;
+
+   }
+   
+   #menuPanel {
+    height:39px;
+    width: 100%;
+    background-position: 50% 50%;
+    top: -1px;
+    left: -1px;
+   }
+   
+   .gradient {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+   }
+   	
+   
+   #treePanel {
+    top:38px;
+    width: 30%;
+    background: blue;
+    left: -1px;
+    bottom: 65px;
+   }
+   
+   #filePanel {
+    top:38px;
+    left: 30%;
+    right:-1px;
+    background: green;
+    bottom: 65px;
+   }
+   
+   #infoPanel {
+    height: 65px;
+    left: -1px;
+    right:-1px;
+    bottom: -1px;
+    background: magenta;
+   }
+   
+   input[type="image"] {
+    height: 33px; width:33px;
+   }
+   
+   #nextButton:hover, #previousButton:hover {
+    background:black;
+    -moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+   }
+   
+   #nextButton:active, #previousButton:active {
+    -moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+   }
+   
+   #pathInput {
+	border: solid 1px blue;
+	bottom: 10px;
+	width: 60%;
+	position:relative;
+   }
+   
+   #searchInput {
+   -moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+	border: solid 1px cyan;
+	bottom: 10px;
+	position:relative;
+   }
+   
+   
+   
+   
+  </style> 
+ 
+<title> File Browser Prototype </title>
+
+ 
+<script type="text/javascript">
+function changeNextButton(param) {
+	if (param == 'down') {
+		document.getElementById("nextButton").src="img/next1.png";
+	} else if (param == 'up') {
+		document.getElementById("nextButton").src="img/next.png";
+	} else {
+		return alert('Unsupported param for function changeNextButton():'+param)
+	}
+}
+</script>
+
+
+</head>
+
+
+<html>
+	<body>
+		<div id="mainPanel">			
+			<div id="navPanel">
+				<input id="previousButton" type="image" src="img/previous.png"/>
+				<input id="nextButton" type="image" src="img/next.png" onmousedown="changeNextButton('down')" onmouseup="changeNextButton('up')"/>
+				<input id="pathInput" type="text"/>
+				<input id="synchronizeButton" type="image" src="img/sync.png"/>		
+				<input id="searchInput" type="text"/>
+				
+			</div>			
+			<div id="contentPanel">
+				<div id="menuPanel">
+					<img class="gradient" src="img/gradientWB.png"></img>
+				</div>
+				<div id="treePanel"> </div>
+				<div id="filePanel"> </div>
+				<div id="infoPanel">
+					<img class="gradient" src="img/gradientBW.png"></img>
+				</div>
+			</div>
+		
+		</div>	
+	</body>
+</html>
