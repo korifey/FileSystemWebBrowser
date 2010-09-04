@@ -15,8 +15,7 @@
    	border: solid 1px black;
    }
    
-   #mainPanel { 
-	
+   #mainPanel {	
 	background: #ddd;
 	
 	-moz-border-radius: 7px;
@@ -68,16 +67,17 @@
    #treePanel {
     top:38px;
     width: 30%;
-    background: blue;
+    background: white;
     left: -1px;
     bottom: 65px;
+    
    }
    
    #filePanel {
     top:38px;
     left: 30%;
     right:-1px;
-    background: green;
+    background: white;
     bottom: 65px;
    }
    
@@ -123,7 +123,14 @@
    }
    
    
-   
+   .treeItem {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 3px;
+    background: cyan;
+    height: 20px;
+   }
    
   </style> 
  
@@ -161,7 +168,21 @@ function changeNextButton(param) {
 				<div id="menuPanel">
 					<img class="gradient" src="img/gradientWB.png"></img>
 				</div>
-				<div id="treePanel"> </div>
+				<div id="treePanel">
+				  <div id="folder1" class="treeItem">
+				  	<img src="img/bottomTriangle_Gray.png" style="top: -5px; left:5px; position: relative"></img>
+				  	<img src="img/folder.ico" ></img>
+				  	<span>Folder1</span>
+				  </div>
+				  <div id="folder2" class="treeItem" style="top:20px;">
+				  	<!-- div style="min-width: 15px; color: red; min-height:10px; background: red;">a</div-->
+				  	<img src="img/rightTriangle_Gray.png" style="top: -2px; left:15px; position:relative;"></img>
+				  	<img src="img/folder.ico" style="left:15px; position:relative;"></img>
+				  	<span style="left:15px; position:relative;">Folder2</span>
+				  </div>
+     			  <div id="folder3" class="treeItem" style="top:40px;"><nobr> long named folder</nobr></div>
+				  <div id="folder4" class="treeItem" style="top:60px;"><nobr>Very long named folder2</nobr></div>
+				</div>
 				<div id="filePanel"> </div>
 				<div id="infoPanel">
 					<img class="gradient" src="img/gradientBW.png"></img>
