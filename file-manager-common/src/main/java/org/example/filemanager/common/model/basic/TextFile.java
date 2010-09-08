@@ -1,10 +1,8 @@
 package org.example.filemanager.common.model.basic;
 
-import java.io.File;
-
-import org.example.filemanager.common.model.IFileType;
 import org.example.filemanager.common.model.IItem;
-import org.example.filemanager.common.model.impl.FileImpl;
+
+import java.io.File;
 
 /**
  * Txt file here is an example of file type that matches by extension 

@@ -1,8 +1,5 @@
 package org.example.filemanager.common.model;
 
-import java.util.Locale;
-import java.util.TimeZone;
-
 /**
  * Holder of typical file attributes keys (to be able to localize them)
  * @author daivanov

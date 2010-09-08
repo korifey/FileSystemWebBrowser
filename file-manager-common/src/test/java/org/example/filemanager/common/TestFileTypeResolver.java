@@ -1,18 +1,18 @@
 package org.example.filemanager.common;
 
-import static org.junit.Assert.*;
-
-import java.io.File;
-import java.util.UUID;
-
 import org.example.filemanager.common.model.IItem;
-import org.example.filemanager.common.model.basic.AnyItem;
 import org.example.filemanager.common.model.basic.AnyFolder;
+import org.example.filemanager.common.model.basic.AnyItem;
 import org.example.filemanager.common.model.basic.BaseFolder;
 import org.example.filemanager.common.model.basic.TextFile;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.File;
+import java.util.UUID;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestFileTypeResolver {
 	private static IItem tmp;

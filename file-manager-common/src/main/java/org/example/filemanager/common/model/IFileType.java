@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.util.Map;
 import java.util.ServiceLoader;
 
-import org.example.filemanager.common.model.impl.FileImpl;
-
 /**
  * Extension point that encapsulates logic of handling particular file type.
  * To add new file type to system one must implement this class and 

@@ -1,20 +1,16 @@
 package org.example.filemanager.common;
 
-import static org.junit.Assert.*;
+import org.example.filemanager.common.model.IItem;
+import org.example.filemanager.common.model.arch.RaredFile;
+import org.example.filemanager.common.model.arch.ZippedFile;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import java.io.File;
 import java.util.UUID;
 
-import org.example.filemanager.common.model.IItem;
-import org.example.filemanager.common.model.arch.RaredFile;
-import org.example.filemanager.common.model.arch.ZippedFile;
-import org.example.filemanager.common.model.basic.AnyItem;
-import org.example.filemanager.common.model.basic.AnyFolder;
-import org.example.filemanager.common.model.basic.TextFile;
-import org.example.filemanager.common.model.impl.FileImpl;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class TestFileTypeResolver {
 	

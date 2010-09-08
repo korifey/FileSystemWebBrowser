@@ -1,16 +1,15 @@
 package org.example.filemanager.common;
 
-import java.io.File;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.regex.Pattern;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.example.filemanager.common.model.IFileAttribute;
 import org.example.filemanager.common.model.IItem;
 import org.example.filemanager.common.model.impl.FileImpl;
+
+import java.io.File;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Handful IO static methods

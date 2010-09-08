@@ -1,6 +1,5 @@
 package org.example.filemanager.common.model;
 
-import java.util.Date;
 import java.util.Map;
 
 /**

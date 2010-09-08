@@ -1,8 +1,8 @@
 package org.example.filemanager.web.model;
 
-import java.util.Arrays;
-
 import org.example.filemanager.common.model.IItem;
+
+import java.util.Arrays;
 
 /**
  * Folder as it viewed by Web UI

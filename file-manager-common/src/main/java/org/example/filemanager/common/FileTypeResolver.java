@@ -1,20 +1,18 @@
 package org.example.filemanager.common;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ServiceLoader;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.example.filemanager.common.model.IFileType;
 import org.example.filemanager.common.model.IItem;
-import org.example.filemanager.common.model.basic.AnyItem;
 import org.example.filemanager.common.model.basic.AnyFolder;
+import org.example.filemanager.common.model.basic.AnyItem;
 import org.example.filemanager.common.model.basic.BaseFolder;
 import org.example.filemanager.common.model.basic.TextFile;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.ServiceLoader;
 
 /**
  * Singleton that resolves item type by item

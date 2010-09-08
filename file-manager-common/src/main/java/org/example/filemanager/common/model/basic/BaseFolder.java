@@ -1,8 +1,6 @@
 package org.example.filemanager.common.model.basic;
 
-import org.example.filemanager.common.model.IFileType;
 import org.example.filemanager.common.model.IItem;
-import org.example.filemanager.common.model.impl.FileImpl;
 
 //Can be inserted into AnyFolder but I think it should be separate
 /**

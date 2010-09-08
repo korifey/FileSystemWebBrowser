@@ -1,12 +1,11 @@
 package org.example.filemanager.web.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import org.example.filemanager.common.FileManagerException;
 import org.example.filemanager.common.FileUtils;
 import org.example.filemanager.common.model.IItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * State of left and right panels 

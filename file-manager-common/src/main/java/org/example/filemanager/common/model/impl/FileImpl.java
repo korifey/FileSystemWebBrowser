@@ -1,14 +1,11 @@
 package org.example.filemanager.common.model.impl;
 
-import java.io.File;
-import java.io.Serializable;
-import java.util.Date;
-import java.util.Map;
-
 import org.example.filemanager.common.FileTypeResolver;
-import org.example.filemanager.common.model.IFileAttribute;
 import org.example.filemanager.common.model.IFileType;
 import org.example.filemanager.common.model.IItem;
+
+import java.io.File;
+import java.util.Map;
 
 /**
  * Common implementation. Should be enough for most purposes. 

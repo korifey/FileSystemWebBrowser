@@ -1,13 +1,12 @@
 package org.example.filemanager.common.model.basic;
 
-import java.io.File;
-import java.util.Map;
-
 import org.example.filemanager.common.FileManagerException;
 import org.example.filemanager.common.FileUtils;
 import org.example.filemanager.common.model.IFileType;
 import org.example.filemanager.common.model.IItem;
-import org.example.filemanager.common.model.impl.FileImpl;
+
+import java.io.File;
+import java.util.Map;
 
 public class AnyFolder implements IFileType {
 	
