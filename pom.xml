@@ -17,6 +17,7 @@
 
     <modules>
         <module>file-manager-common</module>
+        <module>file-manager-arch</module>
         <module>file-manager-web</module>
      </modules>
 

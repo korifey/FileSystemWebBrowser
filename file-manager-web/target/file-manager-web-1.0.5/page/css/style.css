@@ -1,0 +1,192 @@
+   * {
+    margin: 0;
+    padding: 0;
+   }
+   
+   div {
+   	position: absolute;
+   	border: solid 0px black;
+   }
+   
+   #mainPanel {	
+	background: #ddd;
+	
+	border: 1px solid black;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	
+	left: 10%;
+	top: 10%;
+	right:10%;
+	bottom:10%;
+   }
+   
+   #navPanel {
+   	left: 6px;
+   	right:6px; 
+   	top: 30px;
+   	/*border: 0;*/
+   	
+   }
+   
+   #contentPanel { 
+    border: 1px solid black;
+	min-width: 90%; 
+	min-height: 50%;
+	background: #fc0;
+	float: none; 
+	position: absolute; 
+	top: 75px;
+	left: 6px;
+    right: 6px;
+    bottom: 6px;
+
+   }
+   
+   #menuPanel {
+    height:39px;
+    width: 100%;
+    background-position: 50% 50%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid rgb(150, 180, 180);
+   }
+   
+   .gradient {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+   }
+   	
+   
+   #treePanel {
+    top:38px;
+    width: 30%;
+    background: white;
+    left: 0px;
+    bottom: 65px;
+    overflow: scroll;
+   }
+   
+   #filePanel {
+    top:38px;
+    left: 30%;
+    right:0px;
+    background: white;
+    bottom: 65px;
+    border-left: 1px solid rgb(150, 180, 180);
+    overflow: scroll;
+   }
+   
+   #infoPanel {
+    height: 65px;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+    background: magenta;
+    border-top: 2px solid rgb(150, 180, 180);
+   }
+   
+   input[type="image"] {
+    height: 33px; width:33px;
+    left:30px;
+    position:relative;
+    overflow: hidden;
+   }
+   
+   #nextButton:hover, #prevButton:hover {
+    background:black;
+    -moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+   }
+   
+   #nextButton:active, #prevButton:active {
+    -moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+   }
+   
+   #pathInput {
+	border: solid 1px cyan;
+	height: 30px;
+	left: 50px;
+	width: 70%;
+	bottom: 10px;
+	position:relative;
+	
+	font: italic 1.1em "Courier New";
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+   }
+   
+   
+   /* Tree panel */
+   
+   .treeItem, tr {
+    left: 10px;
+    right: 10px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	border-radius: 3px;
+    height: 25px;
+    overflow:hidden;
+   }
+   
+   .treeItem:hover, tr:hover {
+   	  background-color: rgb(191, 255, 245);
+   	  border: solid 1px rgb(0, 171, 228);
+   }
+   
+   .folderName {
+    left: 10px;
+	font: 14pt, courier;
+	position:relative;
+   }
+   
+   .expandImg {
+    top: 0px; 
+   }
+   
+   .filetypeImg {
+   	height: 20px;
+   	top:2px;
+   }
+   
+  .expandImg:hover, .folderName:hover, .filetypeImg:hover, tr:hover {
+    cursor: pointer;
+   }
+   
+   img, span {
+   	position: relative;
+   }
+   
+   /*files.jsp*/
+
+   table {
+   	table-layout: fixed;
+   	left: 2px;
+   	right:2px;
+   	top:2px;
+   }
+   
+   td, th {
+   	text-align: left;
+   	overflow: hidden;
+   	height: 15px;
+   	left: 5px;
+   	
+   }
+   
+   th {
+     border-right:1px solid rgb(196, 240, 240);
+   }
+   
+   .attrValue {
+   	 font-weight: bold;
+   	 color: #334455;
+   }

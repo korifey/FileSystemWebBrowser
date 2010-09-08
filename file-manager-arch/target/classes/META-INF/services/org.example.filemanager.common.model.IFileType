@@ -1,0 +1,3 @@
+org.example.filemanager.common.model.arch.RaredFile
+org.example.filemanager.common.model.arch.ZippedFile
+org.example.filemanager.common.model.arch.ZippedFileEntry
