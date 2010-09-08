@@ -34,10 +34,15 @@
 			return alert('Unsupported param for function changeNextButton():'+param)
 		}
 	}
+	
+	function scrollTo() {
+		document.getElementById('selectedTreeId').scrollIntoView(true);
+		document.getElementById('selectedFileId').scrollIntoView(true);
+	}
   </script>
 </head>
 
-	<body>
+	<body onload="scrollTo();">
 		<div id="mainPanel">			
 			<div id="navPanel">
 				 <jsp:include page="nav.jsp"/>

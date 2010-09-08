@@ -21,13 +21,15 @@
 	<c:choose>
           <c:when test="${manager.currentFileItem == f}">
               <c:set var="selectedStyle" scope="page" value="background-color:rgb(196, 240, 240)"/>
+              <c:set var="selectedFileId" scope="page" value='id="selectedFileId"'/>
           </c:when>
           <c:otherwise>
                <c:set var="selectedStyle" scope="page" value=""/>
+               <c:set var="selectedFileId" scope="page" value=''/>
           </c:otherwise>
     </c:choose>
 	
-	<tr height="25px" onclick="top.location.href='${refbase}/tree/openFile/${idx}'" style="${selectedStyle}">	
+	<tr ${selectedFileId} height="25px" onclick="top.location.href='${refbase}/tree/openFile/${idx}'" style="${selectedStyle}">	
 		<td>
 			<spring:message code="${f.iconUrl}" var="imgUrl"/>
 		

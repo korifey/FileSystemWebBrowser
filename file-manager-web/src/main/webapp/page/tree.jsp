@@ -10,13 +10,15 @@
 	<c:choose>
           <c:when test="${manager.currentTreeItem == f}">
               <c:set var="selectedStyle" scope="page" value="background-color:rgb(196, 240, 240)"/>
+              <c:set var="selectedTreeId" scope="page" value='id="selectedTreeId"'/>
           </c:when>
           <c:otherwise>
                <c:set var="selectedStyle" scope="page" value=""/>
+               <c:set var="selectedTreeId" scope="page" value=""/>
           </c:otherwise>
     </c:choose>
         
-	<div class="treeItem" style="top:${idx * 27}px; ${selectedStyle}">  
+	<div ${selectedTreeId} class="treeItem" style="top:${idx * 27}px; ${selectedStyle}">  
        <c:choose>
           <c:when test="${f.opened}">
             <c:set var="imgUrl" scope="page" value="${urlbase}/img/expanded.png"/>
