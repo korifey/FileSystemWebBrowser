@@ -113,7 +113,9 @@
         	<artifactId>maven-jetty-plugin</artifactId>
         	<version>6.1.10</version>
         	<configuration>
-        		<contextPath>file-manager</contextPath>
+        		<contextPath>file-manager</contextPath>         
+				<stopPort>9966</stopPort>
+				<stopKey>key</stopKey>
         	</configuration>
       	  </plugin>
 			
